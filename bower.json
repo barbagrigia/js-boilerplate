@@ -1,0 +1,27 @@
+{
+  "name": "packageName",
+  "main": "packageName.js",
+  "version": "0.0.0",
+  "description": "Blah blah",
+  "keywords": [
+    "keyw1",
+    "keyw2"
+  ],
+  "license": "MIT",
+  "authors": [
+    "Maxime Thirouin <m@moox.io>"
+  ],
+  "homepage": "https://github.com/MoOx/packageName",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
