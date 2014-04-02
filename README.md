@@ -1,3 +1,33 @@
+# How to use this boilerplate
+
+## Replace stuff
+
+- `$USER` => Github username
+- `packageName` => yourPackageName
+- `PackageName` => YourPackageName
+- `Blah blah` => Your awesome short description
+
+## Publish website on gh-pages
+
+This will create a new empty branch `gh-pages` so you can build something & push
+into this branch.
+
+```shell
+git checkout --orphan gh-pages && touch .gitkeep && git add .gitkeep && git commit -m "Create gh-pages" && git checkout master
+```
+
+## Publish package on bower & npm
+
+```shell
+bower register packageName https://github.com/$USER/packageName.git
+bower version minor
+npm version minor
+npm publish
+git push origin master --tags
+```
+
+---
+
 # PackageName
 
 > Blahblah
