@@ -34,6 +34,20 @@ gulp.task("scripts", ["scripts.lint", "scripts.cs"])
 gulp.task("watch", function() {
   gulp.watch(jsFiles, ["scripts"])
 })
+
+///
+// Publish gh-branch
+///
+var buildBranch = require("buildbranch")
+gulp.task("publish", ["test"], function(cb) {
+  buildBranch({folder: "src"}
+  , function(err) {
+      if (err) {
+        throw err
+      }
+      console.log(pkg.name + " published.")
+      cb()
+    })
 })
 
 // Aliases
