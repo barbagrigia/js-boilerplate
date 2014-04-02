@@ -1,4 +1,4 @@
-(function(root, factory) {
+;(function(root, factory) {
   if (typeof exports === "object") {
     // CommonJS
     module.exports = factory()
@@ -12,6 +12,7 @@
     root.PackageName = factory()
   }
 }(this, function() {
+
   var PackageName = function(options) {
     this.options = options
 
@@ -25,4 +26,5 @@
   }
 
   return PackageName
-}))
+
+}));
