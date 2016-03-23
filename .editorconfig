@@ -10,7 +10,5 @@ indent_style = space
 indent_size = 2
 
 [*.md]
+# Allow <br/> from Markdown
 trim_trailing_whitespace = false
-
-[Makefile]
-indent_style = tab

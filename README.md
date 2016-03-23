@@ -1,100 +1,56 @@
 # How to use this boilerplate
 
-## Replace stuff
-
-- `$USER` => Github username
-- `packageName` => yourPackageName
-- `PackageName` => YourPackageName
-- `Blah blah` => Your awesome short description
-
-## Publish website on gh-pages
-
-This will create a new empty branch `gh-pages` so you can build something & push
-into this branch.
-
-```shell
-git checkout --orphan gh-pages && touch .gitkeep && git add .gitkeep && git commit -m "Create gh-pages" && git checkout master
-```
-
-## Publish package on bower & npm
-
-```shell
-bower register packageName https://github.com/$USER/packageName.git
-bower version minor
-npm version minor
-npm publish
-git push origin master --tags
-```
+- `MoOx` => YourNick
+- `Maxime Thirouin` => Your Name
+- `js-boilerplate` => your-package-name
+- `jsBoilerplate` => yourPackageName
+- `Blahblah` => Your awesome short description
+- enable repo on travis
+- enable repo on coveralls
+- enable greekeeper
 
 ---
 
-# PackageName
+# js-boilerplate
+
+[![Unix Build status](https://img.shields.io/travis/MoOx/js-boilerplate/master.svg?branch=master&label=unix%20build)](https://travis-ci.org/MoOx/js-boilerplate)
+
+```
+[![Windows Build status](https://img.shields.io/appveyor/ci/MoOx/js-boilerplate/master.svg?label=window%20build)](https://ci.appveyor.com/project/MoOx/js-boilerplate/branch/master)
+```
+
+[![Code Coverage](https://img.shields.io/coveralls/MoOx/js-boilerplate/master.svg)](https://coveralls.io/github/MoOx/js-boilerplate)
+
+```
+[![Version](https://img.shields.io/npm/v/js-boilerplate.svg)](https://github.com/MoOx/js-boilerplate/blob/master/CHANGELOG.md)
+```
+
+[![Support on gitter chat](https://img.shields.io/badge/support-gitter%20chat-E40255.svg)](https://gitter.im/MoOx/js-boilerplate)
 
 > Blahblah
 
-PackageName is ~~a jQuery plugin~~ **a standalone JavaScript module** that
-
-
 ## Installation
 
-You can install packageName from **npm**
-
-```shell
-$ npm install packageName
+```console
+$ npm install js-boilerplate
 ```
-
-Or using **bower**
-
-```shell
-$ bower install packageName
-```
-
-PackageName can obviously be downloaded directly.
-
-## No dependencies
-
-_There is nothing you need. No jQuery or something._
-
-## Compatibility
-
-PackageName should work with IE 6. Everything has been said.
 
 ## Usage
 
-### `new PackageName()`
-
-Let's talk more about the most basic way to get started:
-
 ```js
-new PackageName()
+import jsBoilerplate from "js-boilerplate"
+
+jsBoilerplate()
 ```
-
-This will enable PackageName ...
-
-#### Options
-
-##### `option` (Type, default "")
-
 
 ---
 
-## [Changelog](CHANGELOG.md)
+## CONTRIBUTING
 
-## Contributing
+* ⇄ Pull requests and ★ Stars are always welcome.
+* For bugs and feature requests, please create an issue.
+* Pull requests must be accompanied by passing automated tests (`$ npm test`).
 
-Please read the file nobody reads (make me lie) [CONTRIBUTING.md](CONTRIBUTING.md)
+## [CHANGELOG](CHANGELOG.md)
 
-### tl;dr;
-
-Fork, clone, then
-
-```shell
-$ npm i -g gulp
-$ npm i
-$ gulp
-```
-
-Now you can work on the file, then make a commit and a push something when gulp doesn't show any error.
-Thanks.
-
-## [License](LICENSE-MIT)
+## [LICENSE](LICENSE)
