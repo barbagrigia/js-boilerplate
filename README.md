@@ -1,4 +1,15 @@
-# How to use this boilerplate
+# My JavaScript project boilerplate
+
+Included:
+
+- Babel + presets for transpiling
+- Eslint + config for linting
+- Flow for types
+- AVA for tests
+- nyc/coveralls for code coverage
+- (and React, but no sure why I added it)
+
+## How to use this boilerplate
 
 - `MoOx` => YourNick
 - `Maxime Thirouin` => Your Name
