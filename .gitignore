@@ -7,11 +7,11 @@
 # Node.js / npm
 node_modules
 
-# code coverage
-.nyc_output
-
 # build
 lib
 
 # tests results
 **/__tests__/_output*
+
+# code coverage
+.nyc_output
