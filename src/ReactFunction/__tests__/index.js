@@ -17,7 +17,7 @@ test("ReactFunction works", () => {
   )
 
   expect(renderer.getRenderOutput()).toEqualJSX(
-    <div>
+    <div className={ "_-index--container" }>
       { "Hi" }
     </div>
   )

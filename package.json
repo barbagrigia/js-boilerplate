@@ -19,11 +19,13 @@
     "babel-core": "^6.3.26",
     "babel-eslint": "^6.0.0-beta.6",
     "babel-plugin-flow-react-proptypes": "^0.2.4",
+    "babel-plugin-webpack-loaders": "^0.4.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.1",
     "babel-preset-stage-1": "^6.3.13",
     "coveralls": "^2.11.9",
+    "css-loader": "^0.23.1",
     "eslint": "^2.0.0",
     "eslint-config-i-am-meticulous": "^4.1.0",
     "eslint-loader": "^1.3.0",
@@ -38,7 +40,9 @@
     "nyc": "^6.1.1",
     "react": "^15.0.0-rc.2",
     "react-addons-test-utils": "^15.0.0-rc.2",
-    "react-dom": "^15.0.0-rc.2"
+    "react-dom": "^15.0.0-rc.2",
+    "style-loader": "^0.13.1",
+    "webpack-easy-config": "^0.1.0"
   },
   "scripts": {
     "transpile": "babel --ignore __tests__ --copy-files src --out-dir lib",
@@ -47,8 +51,9 @@
     "lint:js:flow": "flow src",
     "lint:js": "npm -s run lint:js:eslint && npm -s run lint:js:flow",
     "lint": "npm -s run lint:js",
+    "tests": "CONFIG=$(pwd)/webpack.config.test.babel.js BABEL_DISABLE_CACHE=1 NODE_ENV=test ava",
     "pretest": "npm -s run lint",
-    "test": "ava",
+    "test": "npm -s run tests",
     "test-with-coverage": "nyc npm run test",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "release": "npmpub"
@@ -63,6 +68,17 @@
       "development": {
         "plugins": [
           "babel-plugin-flow-react-proptypes"
+        ]
+      },
+      "test": {
+        "plugins": [
+          [
+            "babel-plugin-webpack-loaders",
+            {
+              "config": "${CONFIG}",
+              "verbose": false
+            }
+          ]
         ]
       }
     }

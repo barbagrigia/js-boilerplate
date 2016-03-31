@@ -1,6 +1,7 @@
 /* @flow */
 
 import React, { Element } from "react"
+import styles from "./index.css"
 
 type Props = {
   param: string,
@@ -8,7 +9,7 @@ type Props = {
 
 const ReactFunctionalComponent = (props: Props): Element => {
   return (
-    <div>
+    <div className={ styles.container }>
       { props.param }
     </div>
   )
