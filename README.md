@@ -16,9 +16,9 @@ Included:
 - `js-boilerplate` => your-package-name
 - `jsBoilerplate` => yourPackageName
 - `Blahblah` => Your awesome short description
-- enable repo on travis
-- enable repo on coveralls
-- enable greekeeper
+- enable repo on travis https://travis-ci.org/profile/MoOx
+- enable repo on coveralls https://coveralls.io/repos/new
+- $ greekeeper enable
 
 ---
 
