@@ -38,6 +38,10 @@ Included:
 
 [![Support on gitter chat](https://img.shields.io/badge/support-gitter%20chat-E40255.svg)](https://gitter.im/MoOx/js-boilerplate)
 
+[![Repo on GitHub](https://img.shields.io/badge/repo-GitHub-3D76C2.svg)](https://github.com/MoOx/js-boilerplate)
+[![Repo on GitLab](https://img.shields.io/badge/repo-GitLab-6C488A.svg)](https://gitlab.com/MoOx/js-boilerplate)
+[![Repo on BitBucket](https://img.shields.io/badge/repo-BitBucket-1F5081.svg)](https://bitbucket.org/MoOx/js-boilerplate)
+
 > Blahblah
 
 ## Installation
@@ -58,9 +62,9 @@ jsBoilerplate()
 
 ## CONTRIBUTING
 
-* ⇄ Pull requests and ★ Stars are always welcome.
+* ⇄ Pull/Merge requests and ★ Stars are always welcome.
 * For bugs and feature requests, please create an issue.
-* Pull requests must be accompanied by passing automated tests (`$ npm test`).
+* Pull/Merge requests must be accompanied by passing automated tests (`$ npm test`).
 
 ## [CHANGELOG](CHANGELOG.md)
 

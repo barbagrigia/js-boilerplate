@@ -6,6 +6,12 @@
   "author": "Maxime Thirouin",
   "license": "MIT",
   "repository": "https://github.com/MoOx/js-boilerplate.git",
+  "#repositories": "https://github.com/npm/npm/issues/11315",
+  "repositories": [
+    "https://github.com/MoOx/js-boilerplate.git",
+    "https://gitlab.com/MoOx/js-boilerplate.git",
+    "https://bitbucket.org/MoOx/js-boilerplate.git"
+  ],
   "main": "lib/index.js",
   "files": [
     "lib",
