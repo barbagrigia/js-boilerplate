@@ -14,10 +14,10 @@ cache:
     - node_modules
 
 before_install:
-  # remove useless/non listed deps
-  - npm prune
   # faster npm install
   - npm set progress=false
+  # remove useless/non listed deps
+  - npm prune
 
 script: npm run test-with-coverage
 
