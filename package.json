@@ -42,7 +42,7 @@
     "eslint-plugin-react": "^4.3.0",
     "expect": "^1.16.0",
     "expect-jsx": "^2.4.0",
-    "flow-bin": "^0.23.0",
+    "flow-bin": "^0.24.0",
     "flow-interfaces": "^0.6.0",
     "npmpub": "^3.0.0",
     "nyc": "^6.4.0",
